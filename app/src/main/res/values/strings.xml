@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sports Calculator</string>
+    <string name="weight">Podaj wage ciała</string>
+    <string name="height">Podaj swój wzrost</string>
+    <string name="age">Podaj swój wiek</string>
+    <string name="table_bmi">Tabela BMI</string>
+    <string name="name_surname">Podaj swoje dane</string>
+    <string name="replay">Sprobuj ponownie</string>
+</resources>

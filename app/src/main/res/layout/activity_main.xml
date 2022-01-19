@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:text="KALKULATOR BMI"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="33dp"
+        android:layout_gravity="center"
+        android:textColor="@color/teal_200"
+        android:drawableLeft="@drawable/bmi">
+    </Button>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:text="KALKULATOR BMR"
+        android:textSize="33dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/teal_200"
+        android:color="@color/white"
+        android:drawableLeft="@drawable/bmr">
+    </Button>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="10dp"
+        android:color="@color/white"
+        android:text="KALKULATOR BFI"
+        android:textColor="@color/teal_200"
+        android:textSize="33dp"
+        android:drawableLeft="@drawable/man">
+    </Button>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="10dp"
+        android:color="@color/white"
+        android:text="KALKULATOR BFI"
+        android:textColor="@color/teal_200"
+        android:textSize="33dp"
+        android:drawableLeft="@drawable/woman">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_surname"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:inputType="textPersonName"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:inputType="textPersonName"
+        android:hint="Surname"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/teal_200"
+        android:color="@color/white">
+    </Button>
+</LinearLayout>
