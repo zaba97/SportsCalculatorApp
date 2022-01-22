@@ -6,4 +6,5 @@
     <string name="table_bmi">Tabela BMI</string>
     <string name="name_surname">Podaj swoje dane</string>
     <string name="replay">Sprobuj ponownie</string>
+    <string name="waist">Podaj obwód pasa</string>
 </resources>

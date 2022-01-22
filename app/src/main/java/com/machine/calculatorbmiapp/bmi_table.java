@@ -48,36 +48,28 @@ public class bmi_table extends AppCompatActivity {
 
         float weightValue=Float.parseFloat(S1);
         float heightValue=Float.parseFloat(S2) / 100;
+
         float bmi = weightValue / (heightValue * heightValue);
+
         if (bmi < 16){
             BMIresult = "Lekka niedowaga";
         }
         else if(bmi <15.5) {
             BMIresult = "Niedowaga";
         }
-        else if(bmi > 18.8 && bmi <= 24.9){
+        else if(bmi > 18.8 && bmi <= 24.99){
             BMIresult = "BMI w normie";
         }
-        else if (bmi >= 25.5 && bmi <= 29.9) {
+        else if (bmi >= 25 && bmi <= 29.9) {
             BMIresult = "Nadwaga";
         }
-        calculation = "Twoje BMI wynosi: " + bmi +"\n";
+        else if (bmi >= 30)
+        {
+            BMIresult = "Otyłość";
+        }
+        calculation = "Twoje BMI wynosi:\n " + bmi + "\n" +BMIresult;
         resultText.setText(calculation);
+
     }
-
-    public void calculateBMR(View view) {
-        String S1=weight.getText().toString();
-        String S2=height.getText().toString();
-        String S3=age.getText().toString();
-
-        double weightValue=Float.parseFloat(S1);
-        double heightValue=Float.parseFloat(S2);
-        double ageValue = Float.parseFloat(S3);
-        double bmr = (66 + ((13.7 * weightValue) + (5.0 * heightValue)) - (6.8 * ageValue));
-
-        calculation = "Twoje BMR wynosi: " + bmr +"\n";
-        resultText.setText(calculation);
-    }
-
 
 }
